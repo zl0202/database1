@@ -1,0 +1,15 @@
+server:
+  port: 8080
+mybatis:
+  mapper-locations: classpath:com/qf/mapper/*.xml
+  type-aliases-package: com.qf.pojo
+#  configuration: map-underscore-to-camel-case:true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/rbac?useSSL=true&serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  thymeleaf:
+    cache:false
